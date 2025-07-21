@@ -1,14 +1,1 @@
-# Node.js dependencies
-node_modules/
 
-# dotenv environment file
-.env
-
-# Logs
-*.log
-
-# OS / editor-specific files
-.DS_Store
-
-# React build folder
-frontend/build
