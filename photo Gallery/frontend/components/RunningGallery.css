@@ -1,0 +1,24 @@
+.running-gallery {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  animation: slide 10s linear infinite;
+}
+
+.slider img {
+  width: 33.33%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
