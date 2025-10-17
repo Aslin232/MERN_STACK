@@ -1,0 +1,104 @@
+.people-container {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-right: 50px;
+  position: relative;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  width: 80px;
+  height: 80px;
+  background: #ffe0b2;
+  border-radius: 50%;
+  position: relative;
+  transform-origin: center center;
+  transition: transform 0.15s ease-out;
+}
+
+.eye {
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  transition: transform 0.15s ease-out;
+}
+.left-eye {
+  left: 20%;
+}
+.right-eye {
+  right: 20%;
+}
+
+.mouth {
+  width: 30px;
+  height: 5px;
+  background: black;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.15s ease-out;
+}
+
+.body {
+  width: 40px;
+  height: 120px;
+  background: #1976d2;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.person.neutral .mouth {
+  height: 4px;
+  background: black;
+  border-radius: 2px;
+}
+.person.valid .mouth {
+  border-radius: 0 0 15px 15px;
+  background: green;
+}
+.person.invalid .mouth {
+  border-radius: 15px 15px 0 0;
+  background: red;
+}
+
+/* Head shake/nod for feedback */
+.person.invalid .head {
+  animation: shake 0.5s infinite;
+}
+.person.valid .head {
+  animation: nod 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    rotate: -15deg;
+  }
+  50% {
+    rotate: 15deg;
+  }
+  100% {
+    rotate: -15deg;
+  }
+}
+@keyframes nod {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 15deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
