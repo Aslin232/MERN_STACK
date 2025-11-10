@@ -1,0 +1,127 @@
+body{
+  padding: 0;
+  margin: 0;
+  background:url(https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149152829.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+  height: 120px;
+  width: 100%;
+ 
+  align-items: center;
+  display: flex;
+ 
+}
+.header div{
+  display: flex;
+}
+
+.content{
+  height: 850px;
+  display: flex;
+
+  
+  justify-content: center;
+  width: 100%;
+ 
+
+}
+.form-dis h2{
+  text-align: center;
+font-size: 50px;
+  margin-bottom: 100px;
+  color: white;
+}
+.right-head{
+
+  
+  display: flex;
+  align-items: center;
+ width: 350px;
+ height: 100%;
+}
+.left-head{
+  
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: 70px;
+  width: 400px;
+  font-size: 30px;
+  color: white;
+  
+}
+.middle-head{
+  
+  width: 900px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+
+  gap: 20px;
+  height: 100%;
+}
+.p-u{
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 3px;
+}
+
+.btn{
+  padding: 15px 40px 15px 40px;
+  border-radius: 35px;
+  border: 1px solid whitesmoke;
+  margin-right: 10px;
+  background-color: blanchedalmond;
+}
+.btn-click{
+  background: rgb(167, 153, 131);
+    border: 1px solid rgb(235, 211, 175);
+}
+
+.form-dis{
+  height: 600px;
+  width: 1000px;
+ 
+  margin-top: 30px;
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+.third-inp,.fourth-inp{
+  padding: 20px 500px 20px 20px;
+  border-radius:20px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.first-inp,.second-inp{
+  padding: 20px 150px 20px 20px;
+  border: none;
+  border-radius: 20px;
+  
+}
+.first-inp{
+  margin-right: 35px;
+  margin-bottom: 10px;
+}
+.reg-btn{
+  padding: 20px 300px 20px 300px;
+  margin-top: 10px;
+  border: none;
+  border-radius:30px ;
+}
+.rem-div{
+  display: flex;
+
+}
+.bottom-div{
+  display: flex;
+}

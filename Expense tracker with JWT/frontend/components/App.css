@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.container {
+  background: #ffffff10;
+  position: relative;
+  left: 240px;
+
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 180px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.form button {
+  background: #b5dfd1;
+  color: rgb(92, 88, 88);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background: #059669;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.chart-card {
+  background: #fff;
+  color: #1f2937;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-5px);
+}
+
+.no-data {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
