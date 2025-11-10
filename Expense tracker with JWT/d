@@ -1,1 +1,3 @@
-
+basic expense tracker using chart 
+  contains JWt it only allows to use tracker those who logged in 
+  //contains .env and config
